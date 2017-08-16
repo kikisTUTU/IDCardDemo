@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		140FF1161D8E601800013A3E /* MGBaseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 140604FC1D8E5EE600D71080 /* MGBaseKit.framework */; };
+		140FF1181D8E601D00013A3E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142F341D1D7E97DA00A05A5A /* CoreMedia.framework */; };
+		140FF1191D8E602100013A3E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142F34211D7E97E200A05A5A /* AVFoundation.framework */; };
+		140FF11C1D8E6E1800013A3E /* MGSetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 140FF11B1D8E6E1800013A3E /* MGSetManager.m */; };
+		1419996A1D7D68270029032F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 141999691D7D68270029032F /* main.m */; };
+		1419996D1D7D68270029032F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1419996C1D7D68270029032F /* AppDelegate.mm */; };
+		141999731D7D68270029032F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141999711D7D68270029032F /* Main.storyboard */; };
+		141999751D7D68270029032F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 141999741D7D68270029032F /* Assets.xcassets */; };
+		141999781D7D68270029032F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141999761D7D68270029032F /* LaunchScreen.storyboard */; };
+		142C01031D8165F500E94614 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 142C01021D8165F500E94614 /* ResultViewController.m */; };
+		142C01051D81688400E94614 /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 142C01041D81688400E94614 /* ResultViewController.xib */; };
+		142C010C1D82A7A700E94614 /* DrawLineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 142C010B1D82A7A700E94614 /* DrawLineButton.m */; };
+		142C01161D82A8DD00E94614 /* main_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 142C01151D82A8DD00E94614 /* main_bg.png */; };
+		142C01181D82A94100E94614 /* megviicloud logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 142C01171D82A94100E94614 /* megviicloud logo.png */; };
+		142C011C1D82AEAC00E94614 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 142C011B1D82AEAC00E94614 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		1444D1411ED2D5B000345ED3 /* megviiidcard_0_3_0_model in Resources */ = {isa = PBXBuildFile; fileRef = 1444D1401ED2D5B000345ED3 /* megviiidcard_0_3_0_model */; };
+		148433691D8E52210039C280 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1484335D1D8E52210039C280 /* AFHTTPSessionManager.m */; };
+		1484336A1D8E52210039C280 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 148433601D8E52210039C280 /* AFNetworkReachabilityManager.m */; };
+		1484336B1D8E52210039C280 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 148433621D8E52210039C280 /* AFSecurityPolicy.m */; };
+		1484336C1D8E52210039C280 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 148433641D8E52210039C280 /* AFURLRequestSerialization.m */; };
+		1484336D1D8E52210039C280 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 148433661D8E52210039C280 /* AFURLResponseSerialization.m */; };
+		1484336E1D8E52210039C280 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 148433681D8E52210039C280 /* AFURLSessionManager.m */; };
+		1494B9981D7EA0C000E00B70 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1494B9961D7EA0C000E00B70 /* bg.png */; };
+		1494B9A91D7EA34800E00B70 /* NSDate+MGDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494B9A81D7EA34800E00B70 /* NSDate+MGDate.m */; };
+		1494B9E61D7FF56300E00B70 /* MGLicenseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494B9E51D7FF56300E00B70 /* MGLicenseHandle.m */; };
+		1494BA631D81501A00E00B70 /* card_front.png in Resources */ = {isa = PBXBuildFile; fileRef = 1494BA621D81501A00E00B70 /* card_front.png */; };
+		1494BA6A1D81529900E00B70 /* IDCardSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1494BA691D81529900E00B70 /* IDCardSetViewController.m */; };
+		14FFE3B91D94D9EB00DC24BD /* MegIDCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14FFE3B81D94D9EB00DC24BD /* MegIDCard.framework */; };
+		14FFE3BA1D94D9EB00DC24BD /* MegIDCard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 14FFE3B81D94D9EB00DC24BD /* MegIDCard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14FFE3BB1D94D9EB00DC24BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				14FFE3BA1D94D9EB00DC24BD /* MegIDCard.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		140604FC1D8E5EE600D71080 /* MGBaseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MGBaseKit.framework; path = "../../../Library/Developer/Xcode/DerivedData/V2SDKDemo-epjzkrsxflxuxtfbehqbuzoevuka/Build/Products/Debug-iphoneos/MGBaseKit.framework"; sourceTree = "<group>"; };
+		140FF11A1D8E6E1800013A3E /* MGSetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSetManager.h; sourceTree = "<group>"; };
+		140FF11B1D8E6E1800013A3E /* MGSetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSetManager.m; sourceTree = "<group>"; };
+		140FF11D1D8E74AB00013A3E /* MGNetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGNetConfig.h; sourceTree = "<group>"; };
+		141999651D7D68270029032F /* IDCardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IDCardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		141999691D7D68270029032F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1419996B1D7D68270029032F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1419996C1D7D68270029032F /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		141999721D7D68270029032F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		141999741D7D68270029032F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		141999771D7D68270029032F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		141999791D7D68270029032F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142C01011D8165F500E94614 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		142C01021D8165F500E94614 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		142C01041D81688400E94614 /* ResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
+		142C010A1D82A7A700E94614 /* DrawLineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineButton.h; sourceTree = "<group>"; };
+		142C010B1D82A7A700E94614 /* DrawLineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineButton.m; sourceTree = "<group>"; };
+		142C01151D82A8DD00E94614 /* main_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_bg.png; sourceTree = "<group>"; };
+		142C01171D82A94100E94614 /* megviicloud logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "megviicloud logo.png"; sourceTree = "<group>"; };
+		142C011A1D82AEAC00E94614 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		142C011B1D82AEAC00E94614 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		142F341D1D7E97DA00A05A5A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		142F341F1D7E97DE00A05A5A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		142F34211D7E97E200A05A5A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		142F34231D7E97E800A05A5A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1444D1401ED2D5B000345ED3 /* megviiidcard_0_3_0_model */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = megviiidcard_0_3_0_model; sourceTree = "<group>"; };
+		1484335C1D8E52210039C280 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		1484335D1D8E52210039C280 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		1484335E1D8E52210039C280 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		1484335F1D8E52210039C280 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		148433601D8E52210039C280 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		148433611D8E52210039C280 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		148433621D8E52210039C280 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		148433631D8E52210039C280 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		148433641D8E52210039C280 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		148433651D8E52210039C280 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		148433661D8E52210039C280 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		148433671D8E52210039C280 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		148433681D8E52210039C280 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		1494B9961D7EA0C000E00B70 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		1494B9A71D7EA34800E00B70 /* NSDate+MGDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+MGDate.h"; sourceTree = "<group>"; };
+		1494B9A81D7EA34800E00B70 /* NSDate+MGDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MGDate.m"; sourceTree = "<group>"; };
+		1494B9E41D7FF56300E00B70 /* MGLicenseHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLicenseHandle.h; sourceTree = "<group>"; };
+		1494B9E51D7FF56300E00B70 /* MGLicenseHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGLicenseHandle.m; sourceTree = "<group>"; };
+		1494BA621D81501A00E00B70 /* card_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_front.png; sourceTree = "<group>"; };
+		1494BA681D81529900E00B70 /* IDCardSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDCardSetViewController.h; sourceTree = "<group>"; };
+		1494BA691D81529900E00B70 /* IDCardSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDCardSetViewController.m; sourceTree = "<group>"; };
+		14FFE3B81D94D9EB00DC24BD /* MegIDCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MegIDCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14FFE3BC1D94DA3200DC24BD /* MGNetAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGNetAccount.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		141999621D7D68270029032F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				140FF1191D8E602100013A3E /* AVFoundation.framework in Frameworks */,
+				140FF1181D8E601D00013A3E /* CoreMedia.framework in Frameworks */,
+				140FF1161D8E601800013A3E /* MGBaseKit.framework in Frameworks */,
+				14FFE3B91D94D9EB00DC24BD /* MegIDCard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		140FF11E1D8E74F100013A3E /* APPManager */ = {
+			isa = PBXGroup;
+			children = (
+				140FF11A1D8E6E1800013A3E /* MGSetManager.h */,
+				140FF11B1D8E6E1800013A3E /* MGSetManager.m */,
+			);
+			name = APPManager;
+			sourceTree = "<group>";
+		};
+		1419995C1D7D68270029032F = {
+			isa = PBXGroup;
+			children = (
+				1494B9E21D7FF4B400E00B70 /* MainClass */,
+				1494B9A61D7EA34800E00B70 /* Helper */,
+				146C28D91D7E77CE00124368 /* Resources */,
+				141999811D7D690D0029032F /* Frameworks */,
+				141999671D7D68270029032F /* MGSDKV2Test */,
+				141999661D7D68270029032F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		141999661D7D68270029032F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				141999651D7D68270029032F /* IDCardDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		141999671D7D68270029032F /* MGSDKV2Test */ = {
+			isa = PBXGroup;
+			children = (
+				1419996B1D7D68270029032F /* AppDelegate.h */,
+				1419996C1D7D68270029032F /* AppDelegate.mm */,
+				141999711D7D68270029032F /* Main.storyboard */,
+				141999741D7D68270029032F /* Assets.xcassets */,
+				141999761D7D68270029032F /* LaunchScreen.storyboard */,
+				141999791D7D68270029032F /* Info.plist */,
+				141999681D7D68270029032F /* Supporting Files */,
+			);
+			path = MGSDKV2Test;
+			sourceTree = "<group>";
+		};
+		141999681D7D68270029032F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				141999691D7D68270029032F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		141999811D7D690D0029032F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14FFE3B81D94D9EB00DC24BD /* MegIDCard.framework */,
+				140604FC1D8E5EE600D71080 /* MGBaseKit.framework */,
+				142F34231D7E97E800A05A5A /* CoreVideo.framework */,
+				142F34211D7E97E200A05A5A /* AVFoundation.framework */,
+				142F341F1D7E97DE00A05A5A /* OpenGLES.framework */,
+				142F341D1D7E97DA00A05A5A /* CoreMedia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		142C01191D82AEAC00E94614 /* FDFullscreenPopGesture */ = {
+			isa = PBXGroup;
+			children = (
+				142C011A1D82AEAC00E94614 /* UINavigationController+FDFullscreenPopGesture.h */,
+				142C011B1D82AEAC00E94614 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		146C28D91D7E77CE00124368 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1494B9931D7E9FCF00E00B70 /* model */,
+				146C28DA1D7E77CE00124368 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		146C28DA1D7E77CE00124368 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				142C01171D82A94100E94614 /* megviicloud logo.png */,
+				142C01151D82A8DD00E94614 /* main_bg.png */,
+				1494BA621D81501A00E00B70 /* card_front.png */,
+				1494B9961D7EA0C000E00B70 /* bg.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		1484335B1D8E52210039C280 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				1484335C1D8E52210039C280 /* AFHTTPSessionManager.h */,
+				1484335D1D8E52210039C280 /* AFHTTPSessionManager.m */,
+				1484335E1D8E52210039C280 /* AFNetworking.h */,
+				1484335F1D8E52210039C280 /* AFNetworkReachabilityManager.h */,
+				148433601D8E52210039C280 /* AFNetworkReachabilityManager.m */,
+				148433611D8E52210039C280 /* AFSecurityPolicy.h */,
+				148433621D8E52210039C280 /* AFSecurityPolicy.m */,
+				148433631D8E52210039C280 /* AFURLRequestSerialization.h */,
+				148433641D8E52210039C280 /* AFURLRequestSerialization.m */,
+				148433651D8E52210039C280 /* AFURLResponseSerialization.h */,
+				148433661D8E52210039C280 /* AFURLResponseSerialization.m */,
+				148433671D8E52210039C280 /* AFURLSessionManager.h */,
+				148433681D8E52210039C280 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		1494B9931D7E9FCF00E00B70 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1444D1401ED2D5B000345ED3 /* megviiidcard_0_3_0_model */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1494B9A61D7EA34800E00B70 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1484335B1D8E52210039C280 /* AFNetworking */,
+				142C01191D82AEAC00E94614 /* FDFullscreenPopGesture */,
+				1494B9A71D7EA34800E00B70 /* NSDate+MGDate.h */,
+				1494B9A81D7EA34800E00B70 /* NSDate+MGDate.m */,
+				142C010A1D82A7A700E94614 /* DrawLineButton.h */,
+				142C010B1D82A7A700E94614 /* DrawLineButton.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1494B9E21D7FF4B400E00B70 /* MainClass */ = {
+			isa = PBXGroup;
+			children = (
+				140FF11E1D8E74F100013A3E /* APPManager */,
+				1494BA671D81503600E00B70 /* 网络授权 */,
+				1494BA661D81502D00E00B70 /* IDCard */,
+			);
+			name = MainClass;
+			sourceTree = "<group>";
+		};
+		1494BA661D81502D00E00B70 /* IDCard */ = {
+			isa = PBXGroup;
+			children = (
+				1494BA681D81529900E00B70 /* IDCardSetViewController.h */,
+				1494BA691D81529900E00B70 /* IDCardSetViewController.m */,
+				142C01011D8165F500E94614 /* ResultViewController.h */,
+				142C01021D8165F500E94614 /* ResultViewController.m */,
+				142C01041D81688400E94614 /* ResultViewController.xib */,
+			);
+			name = IDCard;
+			sourceTree = "<group>";
+		};
+		1494BA671D81503600E00B70 /* 网络授权 */ = {
+			isa = PBXGroup;
+			children = (
+				140FF11D1D8E74AB00013A3E /* MGNetConfig.h */,
+				14FFE3BC1D94DA3200DC24BD /* MGNetAccount.h */,
+				1494B9E41D7FF56300E00B70 /* MGLicenseHandle.h */,
+				1494B9E51D7FF56300E00B70 /* MGLicenseHandle.m */,
+			);
+			name = "网络授权";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		141999641D7D68270029032F /* IDCardDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1419997C1D7D68270029032F /* Build configuration list for PBXNativeTarget "IDCardDemo" */;
+			buildPhases = (
+				141999611D7D68270029032F /* Sources */,
+				141999621D7D68270029032F /* Frameworks */,
+				141999631D7D68270029032F /* Resources */,
+				1475F5071D8E3D5B008B3E21 /* ShellScript */,
+				14FFE3BB1D94D9EB00DC24BD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IDCardDemo;
+			productName = MGSDKV2Test;
+			productReference = 141999651D7D68270029032F /* IDCardDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1419995D1D7D68270029032F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = megvii;
+				TargetAttributes = {
+					141999641D7D68270029032F = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9UBHL826XB;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 141999601D7D68270029032F /* Build configuration list for PBXProject "IDCardDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1419995C1D7D68270029032F;
+			productRefGroup = 141999661D7D68270029032F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				141999641D7D68270029032F /* IDCardDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		141999631D7D68270029032F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141999781D7D68270029032F /* LaunchScreen.storyboard in Resources */,
+				142C01181D82A94100E94614 /* megviicloud logo.png in Resources */,
+				1494BA631D81501A00E00B70 /* card_front.png in Resources */,
+				1494B9981D7EA0C000E00B70 /* bg.png in Resources */,
+				141999751D7D68270029032F /* Assets.xcassets in Resources */,
+				141999731D7D68270029032F /* Main.storyboard in Resources */,
+				142C01161D82A8DD00E94614 /* main_bg.png in Resources */,
+				1444D1411ED2D5B000345ED3 /* megviiidcard_0_3_0_model in Resources */,
+				142C01051D81688400E94614 /* ResultViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1475F5071D8E3D5B008B3E21 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		141999611D7D68270029032F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148433691D8E52210039C280 /* AFHTTPSessionManager.m in Sources */,
+				1484336A1D8E52210039C280 /* AFNetworkReachabilityManager.m in Sources */,
+				1419996D1D7D68270029032F /* AppDelegate.mm in Sources */,
+				1494B9A91D7EA34800E00B70 /* NSDate+MGDate.m in Sources */,
+				1484336C1D8E52210039C280 /* AFURLRequestSerialization.m in Sources */,
+				1484336B1D8E52210039C280 /* AFSecurityPolicy.m in Sources */,
+				1484336E1D8E52210039C280 /* AFURLSessionManager.m in Sources */,
+				142C01031D8165F500E94614 /* ResultViewController.m in Sources */,
+				1419996A1D7D68270029032F /* main.m in Sources */,
+				1494BA6A1D81529900E00B70 /* IDCardSetViewController.m in Sources */,
+				142C011C1D82AEAC00E94614 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				1494B9E61D7FF56300E00B70 /* MGLicenseHandle.m in Sources */,
+				142C010C1D82A7A700E94614 /* DrawLineButton.m in Sources */,
+				140FF11C1D8E6E1800013A3E /* MGSetManager.m in Sources */,
+				1484336D1D8E52210039C280 /* AFURLResponseSerialization.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		141999711D7D68270029032F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141999721D7D68270029032F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		141999761D7D68270029032F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141999771D7D68270029032F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1419997A1D7D68270029032F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1419997B1D7D68270029032F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1419997D1D7D68270029032F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mu Yang (Z54WT4UBJV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9UBHL826XB;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = MGSDKV2Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MGFaceppSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.megvii.awesomedemo.idcard;
+				PRODUCT_NAME = IDCardDemo;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1419997E1D7D68270029032F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Beijing Megvii Co., Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9UBHL826XB;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = MGSDKV2Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MGFaceppSDK",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.megvii.awesomedemo.idcard;
+				PRODUCT_NAME = IDCardDemo;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		141999601D7D68270029032F /* Build configuration list for PBXProject "IDCardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1419997A1D7D68270029032F /* Debug */,
+				1419997B1D7D68270029032F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1419997C1D7D68270029032F /* Build configuration list for PBXNativeTarget "IDCardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1419997D1D7D68270029032F /* Debug */,
+				1419997E1D7D68270029032F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1419995D1D7D68270029032F /* Project object */;
+}
